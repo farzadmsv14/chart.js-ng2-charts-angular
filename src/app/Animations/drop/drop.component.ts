@@ -29,5 +29,6 @@ export class DropComponent {
     this.chartService._chartData.subscribe((data) => {
       this.chartData = data;
     });
+    
   }
 }

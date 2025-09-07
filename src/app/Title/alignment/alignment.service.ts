@@ -1,5 +1,3 @@
-
-
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -16,14 +14,27 @@ export interface AlignmentService {
 
 @Injectable({ providedIn: 'root' })
 export class ChartTitleService {
-  private generateRandomData(count: number, min: number, max: number): number[] {
-    return Array.from({ length: count }, () =>
-      Math.floor(Math.random() * (max - min + 1)) + min
+  private generateRandomData(
+    count: number,
+    min: number,
+    max: number
+  ): number[] {
+    return Array.from(
+      { length: count },
+      () => Math.floor(Math.random() * (max - min + 1)) + min
     );
   }
 
   public _chartData = new BehaviorSubject<AlignmentService>({
-    labels: ['June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    labels: [
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ],
     datasets: [
       {
         label: 'Dataset 1',

@@ -65,6 +65,9 @@ import { ProgressiveLineComponent } from './Animations/progressive-line/progress
 import { ChartAreaBorderComponent } from "./Plugins/chart-area-border/chart-area-border.component";
 import { QuadrantsComponent } from "./Plugins/quadrants/quadrants.component";
 import {DecimationChartComponent } from "./Advanced/data-decimation/data-decimation.component";
+import { RadialGradientComponent } from "./Advanced/radial-gradient/radial-gradient.component";
+import { ProgrammaticEventTriggersComponent } from "./Advanced/programmatic-event-triggers/programmatic-event-triggers.component";
+import { DerivedChartTypeComponent } from "./Advanced/derived-chart-type/derived-chart-type.component";
 
 @Component({
   selector: 'app-root',
@@ -134,7 +137,10 @@ import {DecimationChartComponent } from "./Advanced/data-decimation/data-decimat
     ProgressiveLineComponent,
     ChartAreaBorderComponent,
     QuadrantsComponent,
-    DecimationChartComponent
+    DecimationChartComponent,
+    RadialGradientComponent,
+    ProgrammaticEventTriggersComponent,
+    DerivedChartTypeComponent
 ],
   templateUrl: './app.component.html',
 

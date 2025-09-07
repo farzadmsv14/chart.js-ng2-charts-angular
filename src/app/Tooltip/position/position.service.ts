@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-
-
-
-
 export interface TooltipPositionChartData {
   labels: string[];
   datasets: {
@@ -18,7 +14,11 @@ export interface TooltipPositionChartData {
 
 @Injectable({ providedIn: 'root' })
 export class PositionService {
-  private generateRandomData(count: number, min: number, max: number): number[] {
+  private generateRandomData(
+    count: number,
+    min: number,
+    max: number
+  ): number[] {
     return Array.from({ length: count }, () =>
       Math.floor(Math.random() * (max - min + 1))
     );
