@@ -1,0 +1,13 @@
+<button (click)="loadChart()">نمایش چارت با سبک نقاط</button>
+
+<div style="width: 600px; margin: auto">
+  <div *ngIf="showChart">
+    <canvas
+      *ngIf="pointStyleChartData"
+      baseChart
+      [data]="pointStyleChartData"
+      [options]="lineChartOptions"
+      [type]="lineChartType"
+    ></canvas>
+  </div>
+</div>

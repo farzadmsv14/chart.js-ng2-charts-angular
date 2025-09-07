@@ -1,0 +1,14 @@
+<button (click)="loadChart()">نمایش چارت خطی</button>
+
+<div *ngIf="showChart">
+  <div style="width: 600px; margin: auto">
+    <canvas
+      baseChart
+      [data]="chartData"
+      [type]="chartType"
+      [options]="chartOptions"
+    >
+      >
+    </canvas>
+  </div>
+</div>

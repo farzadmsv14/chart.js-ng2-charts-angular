@@ -1,0 +1,11 @@
+<button (click)="loadChart()">نمایش Line Chart Boundaries</button>
+
+<div style="width: 600px; margin: auto" *ngIf="showChart">
+  <canvas
+    *ngIf="lineChartData"
+    baseChart
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [type]="lineChartType">
+  </canvas>
+</div>

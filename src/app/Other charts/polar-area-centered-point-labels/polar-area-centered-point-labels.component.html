@@ -1,0 +1,13 @@
+<button (click)="loadChart()">
+  نمایش Polar Area Chart با برچسب‌های مرکزیت
+</button>
+
+<div style="width: 600px; margin: auto" *ngIf="showChart">
+  <canvas
+    *ngIf="polarChartData"
+    baseChart
+    [data]="polarChartData"
+    [options]="polarChartOptions"
+    [type]="polarChartType"
+  ></canvas>
+</div>

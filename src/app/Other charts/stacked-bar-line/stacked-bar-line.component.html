@@ -1,0 +1,11 @@
+<button (click)="loadChart()">نمایش Stacked Line/Bar Chart</button>
+
+<div style="width: 600px; margin: auto" *ngIf="showChart">
+  <canvas
+    *ngIf="barLineChartData"
+    baseChart
+    [data]="barLineChartData"
+    [options]="barLineChartOptions"
+    [type]="barLineChartType">
+  </canvas>
+</div>

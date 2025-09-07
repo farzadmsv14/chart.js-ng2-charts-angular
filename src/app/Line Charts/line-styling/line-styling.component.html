@@ -1,0 +1,13 @@
+<button (click)="loadChart()">نمایش Line Styling Chart</button>
+
+<div *ngIf="showChart">
+  <div style="width: 600px; margin: auto">
+    <canvas
+      *ngIf="lineStylingChartData"
+      baseChart
+      [data]="lineStylingChartData"
+      [options]="lineChartOptions"
+      [type]="lineChartType"
+    ></canvas>
+  </div>
+</div>

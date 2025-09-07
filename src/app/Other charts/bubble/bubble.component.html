@@ -1,0 +1,13 @@
+<button (click)="loadChart()">نمایش Bubble Chart</button>
+
+<div style="width: 600px; margin: auto">
+  <div *ngIf="showChart">
+    <canvas
+      *ngIf="bubbleChartData"
+      baseChart
+      [data]="bubbleChartData"
+      [options]="bubbleChartOptions"
+      [type]="bubbleChartType"
+    ></canvas>
+  </div>
+</div>

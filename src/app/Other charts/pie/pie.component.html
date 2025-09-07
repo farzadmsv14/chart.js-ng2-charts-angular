@@ -1,0 +1,11 @@
+<button (click)="loadChart()">نمایش Pie Chart</button>
+
+<div style="width: 600px; margin: auto" *ngIf="showChart">
+  <canvas
+    *ngIf="pieChartData"
+    baseChart
+    [data]="pieChartData"
+    [options]="pieChartOptions"
+    [type]="pieChartType"
+  ></canvas>
+</div>

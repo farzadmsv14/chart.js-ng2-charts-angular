@@ -1,0 +1,11 @@
+<button (click)="loadChart()">نمایش Radar Skip Points Chart</button>
+
+<div style="width: 600px; margin: auto" *ngIf="showChart">
+  <canvas
+    *ngIf="radarChartData"
+    baseChart
+    [data]="radarChartData"
+    [options]="radarChartOptions"
+    [type]="radarChartType"
+  ></canvas>
+</div>

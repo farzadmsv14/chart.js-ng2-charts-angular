@@ -1,0 +1,11 @@
+<button (click)="loadChart()">نمایش Scatter Multi Axis Chart</button>
+
+<div style="width: 600px; margin: auto" *ngIf="showChart">
+  <canvas
+    *ngIf="scatterChartData"
+    baseChart
+    [data]="scatterChartData"
+    [options]="scatterChartOptions"
+    [type]="scatterChartType"
+  ></canvas>
+</div>

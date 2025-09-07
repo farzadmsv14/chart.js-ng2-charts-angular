@@ -1,0 +1,13 @@
+<button (click)="loadChart()">نمایش Stepped Line Chart</button>
+
+<div style="width: 600px; margin: auto">
+  <div *ngIf="showChart">
+    <canvas
+      *ngIf="steppedLineChartData"
+      baseChart
+      [data]="steppedLineChartData"
+      [options]="lineChartOptions"
+      [type]="lineChartType"
+    ></canvas>
+  </div>
+</div>
